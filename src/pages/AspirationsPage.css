@@ -1,0 +1,58 @@
+.aspirations-container {
+  font-family: 'Lato', sans-serif;
+  color: #653d27;
+}
+
+.aspirations-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.aspirations-paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.aspirations-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.aspirations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre cada item */
+  margin-bottom: 20px;
+}
+
+.aspiration-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px; /* Espacio entre el ícono y el texto */
+  background-color: #FDEEF0; /* Fondo rosado claro */
+  border: 1px solid #F8B4C3; /* Borde rosado */
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.aspiration-icon {
+  font-size: 1.2rem;
+  margin-top: 2px; /* Alineación vertical ligera */
+}
+
+.aspiration-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.aspirations-paragraph.long-term {
+  font-size: 1rem;
+}

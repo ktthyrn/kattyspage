@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Federant&family=M+PLUS+Rounded+1c&family=Ojuju:wght@200..800&display=swap');
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-section h1 {
+  /* AJUSTE: Hacemos el nombre mucho más grande */
+  font-family: "Federant", serif;
+  font-size: 4rem;
+  color: #653d27;
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.1;
+  /* <<< AÑADIDO: Esto asegura que el nombre se mantenga en una sola línea */
+  white-space: nowrap;
+  text-align: center;
+}
+
+.info-section h2 {
+  /* AJUSTE: Hacemos el subtítulo más grande */
+  font-family: "Ojuju", sans-serif;
+  font-size: 1.5rem;
+  color: #E8839B;
+  margin-top: 10px;
+  margin-bottom: 40px; /* Más separación */
+  font-weight: 700;
+  text-align: center;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px; /* Un poco más de espacio */
+  margin-bottom: 40px;
+}
+
+/* src/components/InfoSection.css */
+
+.info-button {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F7C5CC;
+  color: #653d27;
+  border: none;
+  border-radius: 25px;
+  padding: 16px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  text-align: center; /* Asegura que el texto dentro del Link esté centrado */
+
+  /* <<< AÑADE ESTA LÍNEA PARA QUITAR EL SUBRAYADO */
+  text-decoration: none;
+}
+
+.info-button:hover {
+  background-color: #F0AAB8;
+  transform: translateY(-3px);
+}
+
+.social-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.social-icons a {
+  color: #DDC5C9;
+  /* AJUSTE: Hacemos los íconos un poco más grandes */
+  font-size: 1.7rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #E8839B;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .info-section {
+    align-items: center;
+  }
+   .info-section h1 {
+    font-size: 3rem;
+    white-space: normal; /* Permitimos que el nombre se divida en pantallas pequeñas */
+  }
+}

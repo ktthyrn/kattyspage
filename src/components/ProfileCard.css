@@ -1,0 +1,55 @@
+.profile-card {
+  background-color: #FEF6F6;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 2px solid white; /* Borde blanco más notorio */
+  padding: 12px; /* Espaciado interno para el borde */
+}
+
+.card-header {
+  background-color: transparent; /* El fondo ahora es transparente */
+  padding: 8px 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background-color: #FF5F56; }
+.dot.yellow { background-color: #FFBD2E; }
+.dot.green { background-color: #27C93F; }
+
+.image-container {
+  position: relative;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  background-color: #FFD4DB; /* Color de fondo para la imagen de Snoopy */
+}
+
+/* NUEVO: Estilo para el ícono de corazón */
+.heart-icon-wrapper {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #FEE7EB;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transform: rotate(8deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-icon-wrapper span {
+  font-size: 2rem;
+}

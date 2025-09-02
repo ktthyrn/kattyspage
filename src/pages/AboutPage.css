@@ -1,0 +1,10 @@
+.about-text p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  color: #653d27;
+  line-height: 1.6;
+  max-width: 500px;
+  
+  /* <<< AÑADE ESTA LÍNEA PARA CENTRAR EL TEXTO */
+  text-align: center;
+}

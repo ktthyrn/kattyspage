@@ -1,0 +1,56 @@
+@import '../styles/Shared.css'; /* Importamos los estilos del "sticker" */
+
+.contact-container {
+  font-family: 'Lato', sans-serif;
+  color: #653d27;
+  text-align: center; /* Centramos todo el contenido */
+}
+
+.contact-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 550px;
+  margin: 0 auto 40px auto; /* Centramos el párrafo y le damos espacio inferior */
+}
+
+.contact-grid {
+  display: grid;
+  /* Creamos 3 columnas, pero en pantallas pequeñas se ajustará a 1 */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.contact-card {
+  /* Hacemos que el sticker se comporte como una tarjeta */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 30px 20px;
+}
+
+.contact-icon {
+  font-size: 2.5rem; /* Íconos más grandes */
+  margin-bottom: 15px;
+  color: #E8839B;
+}
+
+.contact-card-title {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact-card-info {
+  margin: 0;
+  font-size: 0.9rem;
+}

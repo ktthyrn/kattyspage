@@ -1,13 +1,30 @@
-body {
+/* src/index.css */
+
+/* Nos aseguramos de que el HTML y el Body ocupen toda la altura */
+html, body {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+}
+
+/* Le damos al contenedor principal de React la responsabilidad de centrar */
+#root {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* Puedes mantener el resto de tus estilos de body aquí si quieres,
+   o moverlos a App.css como lo teníamos. Vamos a dejarlos aquí para
+   mayor claridad. */
+body {
+  background-color: #FFF5F6;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* Es buena práctica tener las fuentes en el archivo CSS de más alto nivel */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
