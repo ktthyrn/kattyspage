@@ -5,10 +5,11 @@ import './index.css';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// ...
 root.render(
   <React.StrictMode>
-    {/* 2. ENVUELVE TU COMPONENTE APP ASÍ */}
-    <BrowserRouter>
+    {/* Añadimos la propiedad basename para que las rutas funcionen en local y en producción */}
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
