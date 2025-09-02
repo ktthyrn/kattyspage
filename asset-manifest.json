@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kattyspage/static/css/main.6d344ddd.css",
+    "main.js": "/kattyspage/static/js/main.fc70182e.js",
+    "static/media/profile-image.png": "/kattyspage/static/media/profile-image.4642bf3c2ede2d4059cb.png",
+    "index.html": "/kattyspage/index.html",
+    "main.6d344ddd.css.map": "/kattyspage/static/css/main.6d344ddd.css.map",
+    "main.fc70182e.js.map": "/kattyspage/static/js/main.fc70182e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d344ddd.css",
+    "static/js/main.fc70182e.js"
+  ]
+}
